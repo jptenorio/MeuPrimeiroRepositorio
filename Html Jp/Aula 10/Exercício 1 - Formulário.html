@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms em HTML</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Exemplo de formulário no HTML</h1>
+    </header>
+    <article>
+        <form method="post" id="fContato" action="mailto:jptenorioo5@gmail.com" oniput="result.value=parseInt(valor_01.value)+parseInt(valor_02.value)">
+
+        <fieldset>
+                <legend>Identificação:</legend>
+            <label for="cNome">Nome:</label>
+            
+            <br />
+            
+            <input autocomplete="off" type="text" size="50" name="tNome" id="cNome" required="required" /> 
+            
+            <br /><br />
+            
+            <p>Você mora:</p>
+            <input type="radio" name="tipo" id="cid" value="C" />
+            <label for="cid">Cidade</label>
+            
+            <br />
+
+            <input type="radio" name="tipo" id="inter" value="I" />
+            <label for="inter">Interior</label>
+            
+            <br />
+
+        </fieldset>
+            
+            <br /><br/>
+
+        <fieldset>
+                <legend>Informações Extras:</legend>
+            <p>Qual meio de transporte você usa?</p>
+            <input type="checkbox" id="transporte1" name="transporte1" value="Bike" />
+            <labe for="transporte1">Bicicleta</labe>
+            
+            <br />
+
+            <input type="checkbox" id="transporte2" name="transporte2" value="Carro" />
+            <label for="transporte2">Carro</label>
+            
+            <br />
+
+            <input type="checkbox" id="transporte3" name="transporte3" value="Metro" />
+            <label for="transporte3">Metrô</label>
+            
+            <br />
+
+            <input type="checkbox" id="transporte4" name="transporte4" value="Bus" />
+            <label for="transporte4">Ônibus</label> 
+            
+            <br /><br />
+
+            <label for="time">Selecione seu time:</label>
+            <select id="time" name="time">
+                <option value="cruzeiro">Cruzeiro</option>
+                <option value="sao paulo">São Paulo</option>
+                <option value="corinthians">Corinthians</option>
+                <option value="gremio">Grêmio</option>
+                <option value="goiás">Goiás</option>
+                <option value="santos">Santos</option>
+            </select>
+            
+            <br /><br />
+            
+            <label for="cCid">Escolha a sua Cidade na lista:</label>
+            <input autocomplete="on" list="cidade" name="tCid" id="cCid" placeholder="Sua Cidade" />
+            <datalist id="cidade">
+                <option value="São Paulo"></option>
+                <option value="Campinas"></option>
+                <option value="Santos"></option>
+                <option value="Santo André"></option>
+                <option value="Osasco"></option>
+            </datalist>
+        
+        </fieldset>
+
+            <br /><br />
+
+        <fieldset>
+                <legend>Exemplo de range e output</legend>
+            0
+            <input type="range" id="valor_01" name="valor_01"/> 
+            100 +
+            <input type="number" id="valor_02" name="valor_02" value="50" />
+            =
+            <output name="result" for="valor 01 valor 02"></output>
+        </fieldset>
+
+            <br /><br />
+
+        <fieldset>
+                <legend>Sua Opinião:</legend>
+            <p>Sugestões, elogios e críticas:</p>
+            <textarea name="message" rows="10" cols="50" placeholder="Deixe aqui a sua mensagem!" required></textarea>
+        </fieldset>
+
+            <br />
+            
+            <input type="submit" value="Enviar" />
+        </form>
+    </article>
+    <footer>
+        <small>Instituto da Oportunidade Social</small>
+    </footer>
+
+</body>
+
+</html>
