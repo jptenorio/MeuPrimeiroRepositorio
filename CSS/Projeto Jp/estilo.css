@@ -1,0 +1,106 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    line-height: 1.6em;
+}
+
+#showcase {
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    line-height: 1.2em;
+    padding-top: 250px;
+}
+
+#showcase .btn {
+    background: white;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border: black 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+nav {
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .barranav {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.barranav .simbolo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .barranav ul {
+    display: inline-flex;
+    list-style-type: none;
+  }
+
+  .barranav ul li a:hover {
+    background: #fff;
+    color: black;
+    list-style-type: none;
+  }
+
+  .barranav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    list-style-type: none;
+  }
+
+  .barranab ul li:first-child {
+    margin-left: 0px;
+  }
+
+  .menu ul {
+    display: inline-flex;
+  }
+
+  .menu ul li {
+    list-style: none;
+    margin-left: 7px;
+  }
+
+  ::selection{
+    color: #000;
+    background: #fff;
+  }
+    
